@@ -20,9 +20,9 @@ changing anything.
   anything from it to the public repository.
 - **Books are never published.** They are copyrighted. Only Markdown notes go
   to the site, together with what is in a folder named `attachments` next to
-  a public note. Do not move a book or a file from `Reading/` or `Private/`
+  a public note. Do not move a book or a file from `Books/` or `Private/`
   into an `attachments` folder.
-- A PDF in `Reading/` may be open and being annotated on another device. Do
+- A PDF in `Books/` may be open and being annotated on another device. Do
   not rewrite, compress or rename it without the owner's request.
 
 ## Conventions
@@ -46,8 +46,10 @@ changing anything.
   before adding a new area.
 - After the card, a note starts with one `#` heading, which becomes its title
   on the site.
-- A book in `Reading/` is named `Author-Short-Title.pdf`, with hyphens and no
-  spaces or accents. `README.md` has the full rule. Rename a book inside
+- A book in `Books/` is named `Author-Short-Title.pdf`, with hyphens and no
+  spaces or accents, in the folder of its subject. It is a copy: the original
+  stays in the library, `~/Documents/Local/Library`, which is outside the vault
+  and is never uploaded. `README.md` has the full rule. Rename a book inside
   Obsidian, so the links to it are updated.
 - Run `markdownlint-cli2` in the vault after editing a note. Its
   configuration turns off the 80-column limit and allows `iframe`, each with
