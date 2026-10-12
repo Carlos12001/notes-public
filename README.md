@@ -62,6 +62,37 @@ tablet and the e-reader. This repository is the published copy of that vault.
 Names are in English and plain ASCII, for folders, files and tags, as in the
 vault. Only the text of a note may be in Spanish.
 
+## Adding a folder of notes
+
+A new subject with several notes of the same kind gets its own folder, like
+`Philosophy/`. The folder is made in the vault, never in `src/`. With a
+folder for history notes as the example:
+
+1. **Create the folder** at the top of the vault, named in English with a
+   capital letter: `History/`. Create it inside `Private/` instead when it
+   must not be published.
+2. **Choose its area tag,** in lowercase: `history`. Add it to the list of
+   areas in the vault's `README.md`. Every note of the folder carries it.
+3. **Write its template,** `Templates/History.md`: the card with
+   `created: {{date}}` and the tag, a `#` heading for the title, and the `##`
+   headings every note of that kind repeats. Copying
+   `Templates/Philosophy.md` and changing it is the quickest way.
+4. **Write its `README.md`,** `History/README.md`: what the folder holds, how
+   a note is named, and the format of a note with one example. Copy the
+   structure of `Philosophy/README.md`.
+5. **Add the folder to the structure table** at the top of the vault's
+   `README.md`.
+6. **Give it a colour in the graph** (optional): in Obsidian's graph
+   settings, Groups, a new group with the query `tag:#history`.
+
+Nothing changes in this repository. pCloud carries the folder to the other
+devices, and the next `./publish.sh` puts it on the site, where it appears in
+the menu by itself. The folder's `README.md` and its template stay in the
+vault.
+
+A single note does not need a folder: it goes in the folder that fits, with a
+tag for its subject.
+
 ## Changing the site
 
 | To change | Edit |
