@@ -1,0 +1,12 @@
+{
+  // The notes are a copy of the Obsidian vault and follow its rules, which
+  // differ from the repository's in two points.
+  "config": {
+    // The notes are prose written in Obsidian, also on a tablet. Obsidian
+    // shows a line break inside a paragraph as a break, so wrapping at 80
+    // columns would change how every note reads. Lines are left unwrapped.
+    "MD013": false,
+    // Journal entries embed videos, and an iframe is the only way to do it.
+    "MD033": { "allowed_elements": ["iframe"] }
+  }
+}

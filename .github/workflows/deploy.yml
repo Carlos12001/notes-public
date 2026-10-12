@@ -1,0 +1,79 @@
+name: Deploy the site to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  # The Quartz version the site is built with. To upgrade, change this to a
+  # newer commit of jackyzha0/quartz and check the site after the deploy.
+  QUARTZ_REF: 97a2d05f80c4c50534959b1d0d41cc4b3895625e
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out the notes
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Check out Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: ${{ env.QUARTZ_REF }}
+          path: quartz
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Put the notes and the configuration into Quartz
+        run: |
+          rm -rf quartz/content
+          cp -r site/src quartz/content
+          cp site/quartz.config.yaml quartz/quartz.config.yaml
+
+      - name: Install Quartz and its plugins
+        working-directory: quartz
+        run: |
+          npm ci
+          # Quartz installs a missing theme during the build and then fails
+          # to load it in that same run, so the theme is installed first
+          npm install "@quartz-themes/default@^1"
+          npx quartz plugin install --from-config
+
+      - name: Build the site
+        working-directory: quartz
+        run: npx quartz build
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

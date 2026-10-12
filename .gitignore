@@ -1,0 +1,11 @@
+# Output and dependencies of a local Quartz build
+public/
+node_modules/
+.quartz/
+
+# Books are never published: only Markdown notes reach this repository
+*.pdf
+*.epub
+*.mobi
+*.azw3
+*.djvu
