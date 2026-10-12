@@ -25,10 +25,11 @@ changing anything.
 
 ## Conventions
 
-- Each folder of notes has a `README.md` with the format of its notes and a
-  `Template.md` to copy. Follow that format when writing or fixing a note,
-  and update the `README.md` when the owner changes the format. A new folder
-  of notes gets both files.
+- Each folder of notes has a `README.md` with the format of its notes, and
+  `Templates/` has one template per kind of note, named after that folder.
+  Follow the format when writing or fixing a note. When the owner changes a
+  format, update both the `README.md` and the template. A new folder of
+  notes gets both.
 - The text of a note is in Spanish or English, as the owner writes it.
   Everything else is in English and plain ASCII: folder names, file names,
   tags, `README.md` and this file. A proper name, such as a book's title or
