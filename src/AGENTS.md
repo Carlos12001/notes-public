@@ -54,6 +54,10 @@ changing anything.
 
 ## Publishing
 
+This file is published: `publish.sh` copies it to the public repository as
+`src/AGENTS.md`, so that an agent working there has these rules. Do not write
+anything private in it.
+
 `~/Repos/notes-public/publish.sh` mirrors the notes into that repository,
 writes the site's index and pushes. Run it only when the owner asks to
 publish.
