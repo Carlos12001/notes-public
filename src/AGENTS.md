@@ -19,7 +19,9 @@ changing anything.
 - **`Private/` never leaves the owner's devices and pCloud.** Do not copy
   anything from it to the public repository.
 - **Books are never published.** They are copyrighted. Only Markdown notes go
-  to the site.
+  to the site, together with what is in a folder named `attachments` next to
+  a public note. Do not move a book or a file from `Reading/` or `Private/`
+  into an `attachments` folder.
 - A PDF in `Reading/` may be open and being annotated on another device. Do
   not rewrite, compress or rename it without the owner's request.
 
