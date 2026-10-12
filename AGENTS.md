@@ -20,7 +20,7 @@ anything.
 ## Rules
 
 - **Never add what the vault keeps private.** `publish.sh` leaves out the
-  vault's `Private/` folder, the books in `Reading/` and every file that is
+  vault's `Private/` folder, the books in `Books/` and every file that is
   neither Markdown nor inside a folder named `attachments`.
   Do not copy any of them here by hand, and do not weaken the `excludes` list
   without the owner's request.
