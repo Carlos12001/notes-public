@@ -19,7 +19,7 @@ publish() {
   local excludes=(
     --exclude='/Private/'
     --exclude='README.md'
-    --exclude='Template.md'
+    --exclude='/Templates/'
     --exclude='.obsidian/'
     --exclude='.trash/'
     --exclude='*.conflict*'
