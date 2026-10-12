@@ -12,13 +12,13 @@ publish() {
   local target_dir="$repo_dir/src"
 
   # Never published: the Private folder, the README of the vault and of each
-  # folder, the agent file, note templates and what Obsidian keeps for
-  # itself. The home page of the site exists only in the repository, so it is
-  # left alone.
+  # folder, note templates and what Obsidian keeps for itself. The vault's
+  # agent file is copied, so an agent reading the repository has the rules
+  # of the notes. The home page of the site exists only in the repository,
+  # so it is left alone.
   local excludes=(
     --exclude='/Private/'
     --exclude='README.md'
-    --exclude='/AGENTS.md'
     --exclude='Template.md'
     --exclude='.obsidian/'
     --exclude='.trash/'

@@ -14,6 +14,8 @@ backlinks, a graph, a page per tag and full-text search.
 | --- | --- |
 | `src/` | The published notes, in the same folders as the vault |
 | `src/index.md` | The home page of the site |
+| `src/AGENTS.md` | The vault's rules for agents, copied as they are |
+| `AGENTS.md`, `CLAUDE.md` | The rules for agents working in this repository |
 | `quartz.config.yaml` | The site's title, language, theme and plugins |
 | `publish.sh` | Copies the notes here and pushes them |
 | `.markdownlint-cli2.jsonc` | The Markdown rules; `src/` has its own, the vault's |
@@ -42,12 +44,15 @@ tablet and the e-reader. This repository is the published copy of that vault.
 - The site's menu follows the folders. A new note or folder appears on the
   site without any other step.
 - What is not published: a `Private/` folder at the top of the vault, the
-  vault's `AGENTS.md`, every `README.md` and note template `Template.md`
+  `README.md` of the vault and of each folder, the note template `Template.md`
   and Obsidian's own files. Only Markdown is copied, so the books in the
   vault's `Reading/` folder never reach this repository.
 - To exclude another folder of the vault, add a line such as
   `--exclude='/Masters/'` to the `excludes` list at the top of `publish.sh`.
   The vault's `README.md` explains both ways of keeping a note out.
+- The vault's `AGENTS.md` is copied to `src/AGENTS.md` so that an agent
+  reading this repository knows the rules of the notes. It is not a page of
+  the site: `quartz.config.yaml` ignores it.
 - `src/index.md` exists only here; edit it in this repository.
 - A push to `main` builds and deploys the site through GitHub Actions. It
   takes a few minutes.
