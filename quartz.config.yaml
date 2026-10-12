@@ -5,7 +5,7 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics: null
-  locale: es-ES
+  locale: en-US
   baseUrl: carlos12001.github.io/notes-public
   ignorePatterns:
     - private
