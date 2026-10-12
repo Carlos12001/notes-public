@@ -26,10 +26,13 @@ publish() {
     --exclude='/index.md'
   )
 
-  # Mirror the notes by content: only Markdown is taken, and a note removed
-  # or renamed in the vault changes here too
+  # Mirror the notes by content: a note removed or renamed in the vault
+  # changes here too. Two things are taken: Markdown notes, and whatever sits
+  # in a folder named `attachments`, which is where Obsidian puts the images
+  # and files a note embeds. Books in Reading/ are neither, so they stay out.
   local copy_opts=(-rc --delete --prune-empty-dirs "${excludes[@]}"
-    --include='*/' --include='*.md' --exclude='*')
+    --exclude='/Reading/' --include='*/' --include='*.md'
+    --include='attachments/**' --exclude='*')
 
   if [[ "$command" == "publish" || "$command" == "status" ]]; then
     if [[ ! -d "$vault_dir" ]]; then

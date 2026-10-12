@@ -43,10 +43,11 @@ tablet and the e-reader. This repository is the published copy of that vault.
   reads the card: `tags` become tag pages and `created` is the date shown.
 - The site's menu follows the folders. A new note or folder appears on the
   site without any other step.
-- What is not published: a `Private/` folder at the top of the vault, the
-  `README.md` of the vault and of each folder, the note templates in
-  `Templates/` and Obsidian's own files. Only Markdown is copied, so the books
-  in the vault's `Reading/` folder never reach this repository.
+- What is published: Markdown notes, and whatever sits in a folder named
+  `attachments` next to a note, which is where Obsidian puts the images and
+  files a note embeds. What is not: a `Private/` folder at the top of the vault,
+  `Reading/` with the books, `Templates/`, the `README.md` of the vault and of
+  each folder, Obsidian's own files, and any other file that is not Markdown.
 - To exclude another folder of the vault, add a line such as
   `--exclude='/Masters/'` to the `excludes` list at the top of `publish.sh`.
   The vault's `README.md` explains both ways of keeping a note out.

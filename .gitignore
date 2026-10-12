@@ -3,9 +3,11 @@ public/
 node_modules/
 .quartz/
 
-# Books are never published: only Markdown notes reach this repository
+# Books are never published. A PDF or an e-book is only accepted when it is
+# an attachment of a note, inside a folder named `attachments`.
 *.pdf
 *.epub
 *.mobi
 *.azw3
 *.djvu
+!src/**/attachments/**
