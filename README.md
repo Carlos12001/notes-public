@@ -74,10 +74,10 @@ folder for history notes as the example:
    must not be published.
 2. **Choose its area tag,** in lowercase: `history`. Add it to the list of
    areas in the vault's `README.md`. Every note of the folder carries it.
-3. **Write its template,** `Templates/History.md`: the card with
+3. **Write its template,** `Templates/History/Template.md`: the card with
    `created: {{date}}` and the tag, a `#` heading for the title, and the `##`
    headings every note of that kind repeats. Copying
-   `Templates/Philosophy.md` and changing it is the quickest way.
+   `Templates/Philosophy/Template.md` and changing it is the quickest way.
 4. **Write its `README.md`,** `History/README.md`: what the folder holds, how
    a note is named, and the format of a note with one example. Copy the
    structure of `Philosophy/README.md`.
