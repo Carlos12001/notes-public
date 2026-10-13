@@ -94,6 +94,13 @@ vault.
 A single note does not need a folder: it goes in the folder that fits, with a
 tag for its subject.
 
+## Setting up a machine
+
+Publishing needs this repository cloned in `~/Repos`, `git` with an SSH key
+added to GitHub, `rsync`, and the vault in place. The vault arrives with the
+sync of the personal folders; the steps for a new laptop, tablet or e-reader
+are in `INSTALL.md` of the repository `homesync`.
+
 ## Changing the site
 
 | To change | Edit |
