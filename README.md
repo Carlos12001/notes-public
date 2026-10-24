@@ -29,39 +29,44 @@ adds `quartz.config.yaml` and builds.
 
 The notes are not written here. They are written in one Obsidian vault,
 `~/Documents/Synced/Notes`, which pCloud keeps identical on the laptop, the
-tablet and the e-reader. This repository is the published copy of that vault.
+tablet and the e-reader. This repository is the published copy of that
+vault.
 
-```bash
-./publish.sh status     # Show which notes differ, without copying
-./publish.sh            # Copy the notes, commit and push
-```
+To publish:
 
-- `publish.sh` mirrors the vault into `src/`: a note deleted or renamed in
-  the vault is deleted or renamed here too. Do not edit the notes in `src/`
-  by hand, because the next run overwrites them.
-- A note is published whole, with the card of properties at its top. Quartz
-  reads the card: `tags` become tag pages and `created` is the date shown.
-- The site's menu follows the folders. A new note or folder appears on the
-  site without any other step.
-- What is published: Markdown notes, and whatever sits in a folder named
-  `attachments` next to a note, which is where Obsidian puts the images and
-  files a note embeds. What is not: a `Private/` folder at the top of the vault,
-  `Books/` with the books, `Templates/`, the `README.md` of the vault and of
-  each folder, Obsidian's own files, and any other file that is not Markdown.
-- To exclude another folder of the vault, add a line such as
-  `--exclude='/Masters/'` to the `excludes` list at the top of `publish.sh`.
-  The vault's `README.md` explains both ways of keeping a note out.
-- The vault's `AGENTS.md` is copied to `src/AGENTS.md` so that an agent
-  reading this repository knows the rules of the notes. It is not a page of
-  the site: `quartz.config.yaml` ignores it.
-- `src/index.md` exists only here; edit it in this repository.
-- A push to `main` builds and deploys the site through GitHub Actions. It
-  takes a few minutes.
+1. See which notes differ, without copying anything:
 
-`PUBLISH_VAULT_DIR` points the script at another folder.
+   ```bash
+   ./publish.sh status
+   ```
 
-Names are in English and plain ASCII, for folders, files and tags, as in the
-vault. Only the text of a note may be in Spanish.
+2. Copy the notes, commit and push:
+
+   ```bash
+   ./publish.sh
+   ```
+
+3. Wait a few minutes: the push builds and deploys the site through GitHub
+   Actions. A new note or folder appears in the site's menu on its own.
+
+`publish.sh` mirrors the vault into `src/`: a note deleted or renamed in
+the vault is deleted or renamed here too, so never edit the notes in
+`src/` by hand. Set `PUBLISH_VAULT_DIR` to publish from another folder.
+
+| Published | Not published |
+| --- | --- |
+| Every Markdown note, whole, with its card of properties (`tags` become tag pages, `created` is the date shown) | The vault's `Private/` folder |
+| Whatever sits in a folder named `attachments` next to a note: the images and files it embeds | `Books/`, with the books |
+| The vault's `AGENTS.md`, as `src/AGENTS.md`, for agents reading this repository; the site ignores it | `Templates/`, every `README.md`, Obsidian's own files and any other file that is not Markdown |
+
+To keep another folder of the vault out, add a line such as
+`--exclude='/Masters/'` to the `excludes` list at the top of `publish.sh`.
+The vault's `README.md` explains both ways of keeping a note out.
+`src/index.md`, the home page, exists only here; edit it in this
+repository.
+
+Names are in English and plain ASCII, for folders, files and tags, as in
+the vault. Only the text of a note may be in Spanish.
 
 ## Adding a folder of notes
 
