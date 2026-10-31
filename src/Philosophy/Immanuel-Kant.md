@@ -21,13 +21,13 @@ Usa estos conceptos para concebir de donde aprendemos.
 
 ## ¿Cómo se relaciona esta idea con el contexto histórico o con otros pensadores de su época?
 
-Kant es tan importante porque marca el antes de y después de la filosofía. Principalmente ayuda a madurar los conceptos de los racionalista como [Rene Descartes](Rene-Descartes.md), [George Berkeley](George-Berkeley.md) , [Gottfried Leibniz](Gottfried-Leibniz.md) y los empiristas como [Francis Bacon](Francis-Bacon.md), [John Locke](John-Locke.md), [David Hume](David-Hume.md) .
+Kant es tan importante porque marca el antes de y después de la filosofía. Principalmente ayuda a madurar los conceptos de los racionalista como [[Rene-Descartes|Rene Descartes]], [[George-Berkeley|George Berkeley]] , [[Gottfried-Leibniz|Gottfried Leibniz]] y los empiristas como [[Francis-Bacon|Francis Bacon]], [[John-Locke|John Locke]], [[David-Hume|David Hume]] .
 
 Esta corriente que funda Kant se llama **idealismo trascendental**.
 
 ## ¿De qué manera esta perspectiva filosófica puede aplicarse o tener relevancia hoy en día?
 
-Kant dejo historia en la filosofía ya que se toma como base de para desarrollar postura idealista. Pensadores como: [Johan Fichte](Johan-Fichte.md), [Friedrich Schelling](Friedrich-Schelling.md) y [Georg Hegel](Georg-Hegel.md). Usan las ideas desarrolladas de Kant para expandir el conocimiento.
+Kant dejo historia en la filosofía ya que se toma como base de para desarrollar postura idealista. Pensadores como: [[Johan-Fichte|Johan Fichte]], [[Friedrich-Schelling|Friedrich Schelling]] y [[Georg-Hegel|Georg Hegel]]. Usan las ideas desarrolladas de Kant para expandir el conocimiento.
 
 ## Experiencia del Mundo
 

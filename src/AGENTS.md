@@ -19,29 +19,32 @@ changing anything.
 - **`Private/` never leaves the owner's devices and pCloud.** Do not copy
   anything from it to the public repository.
 - **Books are never published.** They are copyrighted. Only Markdown notes go
-  to the site, together with what is in a folder named `attachments` next to
+  to the site, together with what is in a folder named `Attachments` next to
   a public note. Do not move a book or a file from `Books/` or `Private/`
-  into an `attachments` folder.
+  into an `Attachments` folder.
 - A PDF in `Books/` may be open and being annotated on another device. Do
   not rewrite, compress or rename it without the owner's request.
 
 ## Conventions
 
-- Each folder of notes has a `README.md` with the format of its notes, and
-  `Templates/` has one template per kind of note, named after that folder.
-  Follow the format when writing or fixing a note. When the owner changes a
-  format, update both the `README.md` and the template. A new folder of
-  notes gets both.
+- `Templates/` holds one `Template.md` per kind of note: `Journal/`,
+  `Philosophy/`, `Book/` and `Courses/`. `Journal/` and `Philosophy/` also
+  have a `README.md` with the format of their notes. Follow the format when
+  writing or fixing a note, and when the owner changes a format, update the
+  template and that `README.md` together.
 - The text of a note is in Spanish or English, as the owner writes it.
   Everything else is in English and plain ASCII: folder names, file names,
   tags, `README.md` and this file. A proper name, such as a book's title or
   a person's name, keeps its language and loses its accents.
 - A note is named in Title Case with hyphens: `Immanuel-Kant.md`.
-- Links are standard Markdown links with a relative path, with each space
-  written as `%20`. Never `[[wiki links]]`.
+- Links to notes and files are wiki links, by name: `[[Immanuel-Kant]]`,
+  `[[Karl-Marx|Karl Marx]]`, `![[image.png]]`. Links to web pages stay
+  Markdown links.
 - Every note starts with the card of properties described in `README.md`:
-  `created` and `tags`, and `source` when it comes from a book. Add the card
-  to a note that lacks it. Every tag starts with its area (`philosophy`,
+  `created` and `tags` always; `source` (a link to the PDF or slides) for
+  books and courses; `author` (a list of links), `status` (`to-read`,
+  `reading`, `done`) and `rating` (1 to 7) for books. Use only these names.
+  Add the card to a note that lacks it. Every tag starts with its area (`philosophy`,
   `diary`, `politics`) and subtopics are nested tags under it. Ask the owner
   before adding a new area.
 - After the card, a note starts with one `#` heading, which becomes its title

@@ -11,7 +11,7 @@ El ser humano es bueno por naturaleza es la sociedad o conocimiento quien lo cor
 
 ## ¿Cómo se relaciona esta idea con el contexto histórico o con otros pensadores de su época?
 
-[David Hume](David-Hume.md) y [John Locke](John-Locke.md) fueron quienes pusieron la ideas en papel para la revolución francesa. Más tarde [Georg Hegel](Georg-Hegel.md) integro la ideas Rosseau y también [Karl Marx](Karl-Marx.md) lo toma referencia ejemplo cuando animan a los proletarios "no tiene nada que perder salvo sus cadenas"
+[[David-Hume|David Hume]] y [[John-Locke|John Locke]] fueron quienes pusieron la ideas en papel para la revolución francesa. Más tarde [[Georg-Hegel|Georg Hegel]] integro la ideas Rosseau y también [[Karl-Marx|Karl Marx]] lo toma referencia ejemplo cuando animan a los proletarios "no tiene nada que perder salvo sus cadenas"
 
 ## ¿De qué manera esta perspectiva filosófica puede aplicarse o tener relevancia hoy en día?
 

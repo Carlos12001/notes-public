@@ -11,7 +11,7 @@ Primero No se pueden garantizar certezas absolutas, ya que la forma de acceder a
 
 ## ¿Cómo se relaciona esta idea con el contexto histórico o con otros pensadores de su época?
 
-Sigue el pensamiento de [John Locke](John-Locke.md) que la mayoría de conocimiento viene de la existe.
+Sigue el pensamiento de [[John-Locke|John Locke]] que la mayoría de conocimiento viene de la existe.
 
 ## ¿De qué manera esta perspectiva filosófica puede aplicarse o tener relevancia hoy en día?
 
