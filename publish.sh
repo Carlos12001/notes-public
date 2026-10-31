@@ -28,11 +28,11 @@ publish() {
 
   # Mirror the notes by content: a note removed or renamed in the vault
   # changes here too. Two things are taken: Markdown notes, and whatever sits
-  # in a folder named `attachments`, which is where Obsidian puts the images
+  # in a folder named `Attachments`, which is where Obsidian puts the images
   # and files a note embeds. Books in Books/ are neither, so they stay out.
   local copy_opts=(-rc --delete --prune-empty-dirs "${excludes[@]}"
     --exclude='/Books/' --include='*/' --include='*.md'
-    --include='attachments/**' --exclude='*')
+    --include='Attachments/**' --exclude='*')
 
   if [[ "$command" == "publish" || "$command" == "status" ]]; then
     if [[ ! -d "$vault_dir" ]]; then

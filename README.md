@@ -56,7 +56,7 @@ the vault is deleted or renamed here too, so never edit the notes in
 | Published | Not published |
 | --- | --- |
 | Every Markdown note, whole, with its card of properties (`tags` become tag pages, `created` is the date shown) | The vault's `Private/` folder |
-| Whatever sits in a folder named `attachments` next to a note: the images and files it embeds | `Books/`, with the books |
+| Whatever sits in a folder named `Attachments` next to a note: the images and files it embeds | `Books/`, with the books |
 | The vault's `AGENTS.md`, as `src/AGENTS.md`, for agents reading this repository; the site ignores it | `Templates/`, every `README.md`, Obsidian's own files and any other file that is not Markdown |
 
 To keep another folder of the vault out, add a line such as

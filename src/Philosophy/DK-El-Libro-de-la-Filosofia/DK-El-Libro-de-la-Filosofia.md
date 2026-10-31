@@ -8,7 +8,7 @@ source:
 
 Imagen del libro en físico.
 
-![Imagen del libro en físico](attachments/images.jpg)
+![Imagen del libro en físico](Attachments/images.jpg)
 
 Este libro fue de gran ayuda para introducirme a la filosfía.
 
