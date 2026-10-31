@@ -28,10 +28,11 @@ changing anything.
 ## Conventions
 
 - `Templates/` holds one `Template.md` per kind of note: `Journal/`,
-  `Philosophy/`, `Book/` and `Courses/`. `Journal/` and `Philosophy/` also
-  have a `README.md` with the format of their notes. Follow the format when
-  writing or fixing a note, and when the owner changes a format, update the
-  template and that `README.md` together.
+  `Philosophy/`, `Book/` and `Courses/`. The format of each kind is in
+  "Note formats" in `README.md`. Follow it when writing or fixing a note,
+  and when the owner changes a format, update the template and that table
+  together. The only README of the vault is `README.md` at its root: do not
+  add one to a folder.
 - The text of a note is in Spanish or English, as the owner writes it.
   Everything else is in English and plain ASCII: folder names, file names,
   tags, `README.md` and this file. A proper name, such as a book's title or
